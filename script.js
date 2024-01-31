@@ -1,24 +1,3 @@
-/* function myFunction() {
-    document.getElementById(numberUp) . stepUp();
-}
- */
-
-
-
-
-/* function myFunction() {
-    document.getElementById("myNumber").stepUp();
-  } */
-
-/* 
-  function myFunction(){
-    const numberElement = document.getElementById("number");
-    const change = parseInt(numberElement.innerText) + 1;
-    numberElement.innerText = change;
-  }
- */
-
-
   let number = 0;
 
   // Sayıya tıklandığında sayıyı artır
@@ -28,4 +7,26 @@
       number++;
       // Sayıyı göster
       document.getElementById("number").innerHTML = number;
+    });
+
+
+
+    var audio = document.getElementById('rainSong');
+    var volumeRange = document.getElementById('volumeRange');
+    var volumeValue = document.getElementById('volumeValue');
+
+    volumeRange.addEventListener('input', function () {
+        audio.volume = volumeRange.value / 100;
+        volumeValue.innerText = 'Volume: ' + volumeRange.value;
+    });
+
+
+
+    var audio = document.getElementById('birdSong');
+    var volumeRange = document.getElementById('volumeRange');
+    var volumeValue = document.getElementById('volumeValue');
+
+    volumeRange.addEventListener('input', function () {
+        audio.volume = volumeRange.value / 100;
+        volumeValue.innerText = 'Volume: ' + volumeRange.value;
     });

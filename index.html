@@ -10,15 +10,6 @@
 
 <body>
 
-    <!-- <p>dikkatini <span id="numberUp"></span> kez dağıttın.</p>
-<button onclick="myFunction()">test</button>
- -->
-
-    <!--  Number: <input type="text" id="myNumber">
-
-<button onclick="myFunction()">Try it</button>
- -->
-
 
     <section>
         <div class="focus-body">
@@ -29,6 +20,17 @@
         </div>
     </section>
 
+
+    <h1>Volume Control with Audio</h1>
+    <audio id="rainSong" controls>
+        <source src="assets/rain.mp3" type="audio/mp3">
+    </audio>
+    <audio id="birdSong" controls>
+        <source src="assets/birdsong.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <input type="range" id="volumeRange" min="0" max="100" step="1" value="50" />
+    <p id="volumeValue">Volume: 50</p>
 
     <script src="script.js"></script>
 </body>
