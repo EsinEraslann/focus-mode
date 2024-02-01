@@ -10,6 +10,37 @@ section{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
+.focus-body{
+   margin-top: 100px;
+}
+
+
+.focus-body button{ 
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.focus-body input{
+    margin: 20px;
+}
+
+
+
+.icon-button{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+audio{
+    display: none;
+}
