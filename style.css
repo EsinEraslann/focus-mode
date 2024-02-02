@@ -41,6 +41,10 @@ section{
     gap: 50px;
 }
 
+.icon-button{
+    font-size: 30px;
+}
+
 audio{
     display: none;
 }

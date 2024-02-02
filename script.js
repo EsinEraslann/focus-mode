@@ -11,8 +11,8 @@ document
 
 
 
-var audio = document.getElementById("myAudio");
-var playPauseBtn = document.getElementById("playPauseBtn");
+let audio = document.getElementById("myAudio");
+let playPauseBtn = document.getElementById("playPauseBtn");
 
 playPauseBtn.addEventListener("click", function () {
   if (audio.paused) {
@@ -26,29 +26,22 @@ playPauseBtn.addEventListener("click", function () {
 
 
 
-var audio = document.getElementById("rainAudio");
-var playPause = document.getElementById("playPause");
+let sound = document.getElementById("rainAudio");
+let playPause = document.getElementById("playPause");
 
 playPause.addEventListener("click", function () {
-  if (audio.paused) {
-    audio.play();
+  if (sound.paused) {
+    sound.play();
     playPause.className = "fa-solid fa-cloud-showers-heavy"; // pause ikonu
   } else {
-    audio.pause();
+    sound.pause();
     playPause.className = "fa-solid fa-cloud-showers-heavy"; // play ikonu
   }
 });
 
 
 
-var audio = document.getElementById('myAudio');
-var volumeRange = document.getElementById('volumeRange');
-var volumeValue = document.getElementById('volumeValue');
 
-volumeRange.addEventListener('input', function () {
-  audio.volume = volumeRange.value / 100;
-  volumeValue.innerText = 'Volume: ' + volumeRange.value;
-});
 
 /* 
     var audio = document.getElementById('rainSong');
