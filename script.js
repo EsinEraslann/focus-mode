@@ -43,18 +43,19 @@ playPause.addEventListener("click", function () {
 
 
 
-/* 
-    var audio = document.getElementById('rainSong');
-    var volumeRange = document.getElementById('volumeRange');
-    var volumeValue = document.getElementById('volumeValue');
+
+    const volume1 = document.getElementById('rainAudio');
+    const volume2 = document.getElementById('myAudio');
+    const volumeRange = document.getElementById('volume-input');
 
     volumeRange.addEventListener('input', function () {
-        audio.volume = volumeRange.value / 100;
-        volumeValue.innerText = 'Volume: ' + volumeRange.value;
+        volume1.volume = volumeRange.value / 100;
+        volume2.volume = volumeRange.value / 100;
+        volumeValue.innerText = 'Volume:' + volumeRange.value;
     });
 
 
-
+/* 
     var audio = document.getElementById('birdSong');
     var birdRange = document.getElementById('birdRange');
     var birdValue = document.getElementById('birdValue');
