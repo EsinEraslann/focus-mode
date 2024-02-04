@@ -53,14 +53,3 @@ playPause.addEventListener("click", function () {
         volume2.volume = volumeRange.value / 100;
         volumeValue.innerText = 'Volume:' + volumeRange.value;
     });
-
-
-/* 
-    var audio = document.getElementById('birdSong');
-    var birdRange = document.getElementById('birdRange');
-    var birdValue = document.getElementById('birdValue');
-
-    birdRange.addEventListener('input', function () {
-        audio.volume = birdRange.value / 100;
-        birdValue.innerText = 'Volume: ' + birdRange.value;
-    });  */
